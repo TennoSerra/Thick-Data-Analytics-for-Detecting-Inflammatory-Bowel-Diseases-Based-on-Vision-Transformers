@@ -1,0 +1,7 @@
+
+Siamese Masked nn explanation image.
+First use random data augmentations to generate two views of an image,
+referred to as the anchor view and the target view. Subsequently, a random mask is applied to the anchor view,
+while the target view is left unchanged. The objective is then to assign the representation of the masked anchor
+view to the same clusters as the representation of the unmasked target view. A standard cross-entropy loss is
+used as the criterion to optimize.
